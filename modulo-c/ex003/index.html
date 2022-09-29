@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JS</title>
+</head>
+<body>
+    <h1>Estudando condições simples e compostas</h1>
+    <h2>Sistema de multas</h2>
+    <form action="">
+        <label for="ivel">Velocidade do carro:</label>
+        <input type="number" name="vel" id="ivel"> <span>Km/h</span>
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res"></div>
+    </form>
+    <script>
+        function calcular() {
+            var textoVelocidade = document.querySelector('input#ivel')
+            var res = document.querySelector('div#res')
+            var numeroVelocidade = Number(textoVelocidade.value)
+            res.innerHTML = `Sua velocidade atual é <strong>${numeroVelocidade}Km/h</strong>` 
+            if (numeroVelocidade > 60) {
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Digija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+/*
+#203640
+#213542
+#D7D2D8
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(64, 95, 63, 0.822);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header h1{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding: 25px;
+}
+
+form {
+    background-color: #D7D2D8;
+    width: 450px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.397);
+}
+
+input#botao {
+    padding: 2px 5px;
+}
+
+p#sexo {
+    padding: 20px 0px;
+}
+
+p#result {
+    padding-top: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: black;
+}

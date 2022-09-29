@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o DOM</title>
+    <style>
+        div#area{
+            background-color: lightgreen;
+            color: darkred;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM</h1>
+    <h2>Eventos DOM</h2>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var evento = document.getElementById('area')
+
+        evento.addEventListener('click', clicar)
+        evento.addEventListener('mouseenter', entrar)
+        evento.addEventListener('mouseout', sair)
+
+        function clicar() {
+            evento.innerText = 'Clicou!'
+            evento.style.background = 'red'
+        }
+
+        function entrar() {
+            evento.innerText = 'Mouse entrou!'
+        }
+
+        function sair() {
+            evento.innerText = 'Mouse saiu!'
+            evento.style.background = 'lightgreen'
+        }
+    </script>
+</body>
+</html>
